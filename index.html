@@ -1,0 +1,1104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ras Vegas - Supper delicious Burger in town!</title>
+  <!-- 
+    - favicon
+  -->
+<link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+
+  <!-- 
+    - google font link
+  -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Rubik:wght@400;500;600;700&family=Shadows+Into+Light&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - preload images
+  -->
+<link rel="preload" as="image" href="hero-banner.png" media="min-width(768px)">
+<link rel="preload" as="image" href="hero-banner-bg.png" media="min-width(768px)">
+<link rel="preload" as="image" href="hero-bg.jpg">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body id="top">
+<!-- 
+    - #HEADER
+  -->
+<header class="header" data-header>
+    <div class="container">
+
+      <h1>
+        <a href="#home" class="logo">Ras <span class="span">Vegas</span></a>
+      </h1>
+<nav class="navbar" data-navbar>
+  <ul class="navbar-list">
+<li class="nav-item">
+            <a href="#home" class="navbar-link" data-nav-link>Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#about" class="navbar-link" data-nav-link>About Us</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#food-menu" class="navbar-link" data-nav-link>Our Menu</a>
+          </li>
+
+         
+
+          <li class="nav-item">
+            <a href="#footer" class="navbar-link" data-nav-link>Contact Us</a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <div class="header-btn-group">
+        
+       
+
+        
+        <button class="nav-toggle-btn" aria-label="Toggle Menu" data-menu-toggle-btn>
+            <span class="line top"></span>
+            <span class="line middle"></span>
+            <span class="line bottom"></span>
+          </button>
+        
+      </div>
+
+    </div>
+  </header>
+
+<main>
+    <article>
+
+           <!-- 
+        - #HERO
+      -->
+<section class="hero" id="home" style="background-image: url('hero-bg.jpg')">
+      <div class="container">
+      <div class="hero-content">
+<p class="hero-subtitle">Discover. Indulge. Enjoy.</p>
+<h2 class="h1 hero-title">Supper delicious Food in town!</h2>
+<p class="hero-text">Embark on a journey of taste with dishes crafted to perfection, bringing flavors that ignite your senses and satisfy your cravings.</p>
+
+<button class="btn" onclick="scrollToMenu()">Explore our Dishes</button>
+
+
+          </div>
+           <figure class="hero-banner">
+            <img src="hero-banner-bg.png" width="820" height="716" alt="" aria-hidden="true"
+              class="w-100 hero-img-bg">
+
+            <img src="hero-banner.png" width="700" height="637" loading="lazy" alt="Burger"
+              class="w-100 hero-img">
+          </figure>
+
+        </div>
+      </section>
+
+  <!-- 
+        - #ABOUT
+      -->
+
+<section class="section section-divider gray about" id="about">
+        <div class="container">
+
+          <div class="about-banner">
+            <img src="about-banner.png" width="509" height="459" loading="lazy" alt="Burger with Drinks"
+              class="w-100 about-img">
+            </div>
+
+          <div class="about-content">
+
+            <h2 class="h2 section-title">
+                Ras Vegas: Burgers, Wraps, and the Best Food 
+              <span class="span">in Town!</span>
+            </h2>
+
+            <p class="section-text">
+                At Ras Vegas, we bring the ultimate fast food experience, blending bold flavors and quick service to satisfy your cravings. Whether you're dining in or ordering out, every bite is a jackpot of deliciousness!
+            </p>
+
+            <ul class="about-list">
+
+              <li class="about-item">
+                <ion-icon name="checkmark-outline"></ion-icon>
+
+                <span class="span">Mouthwatering & Freshly Made Meals</span>
+              </li>
+
+              <li class="about-item">
+                <ion-icon name="checkmark-outline"></ion-icon>
+
+                <span class="span">A Fun and Family-Friendly Environment</span>
+              </li>
+
+              <li class="about-item">
+                <ion-icon name="checkmark-outline"></ion-icon>
+
+                <span class="span">Lively Atmosphere with Great Vibes</span>
+              </li>
+
+              <li class="about-item">
+                <ion-icon name="checkmark-outline"></ion-icon>
+
+                <span class="span">Quick and Reliable Food Delivery</span>
+              </li>
+
+            </ul>
+        </div>
+
+        </div>
+      </section>
+
+
+
+      <!-- 
+        - #FOOD MENU
+      -->
+
+<section class="section food-menu" id="food-menu">
+        <div class="container">
+
+          
+
+          <h2 class="h2 section-title">
+            Our Delicious <span class="span">Foods</span>
+          </h2>
+          <br>
+          <br>
+          <ul class="fiter-list">
+            <li>
+              <button class="filter-btn active" data-filter="all">All</button>
+            </li>
+            <li>
+              <button class="filter-btn" data-filter="burger">Burger</button>
+            </li>
+            <li>
+              <button class="filter-btn" data-filter="sandwich">Sandwich</button>
+            </li>
+            <li>
+              <button class="filter-btn" data-filter="plates">Plates</button>
+            </li>
+            <li>
+              <button class="filter-btn" data-filter="desert">Desert</button>
+            </li>
+          </ul>
+         
+          <ul class="food-menu-list">
+
+            <li>
+              <div class="food-menu-card" data-category="burger">
+
+                <div class="card-banner">
+               
+                    <button class="btn food-menu-btn"  onclick="window.location.href='https://wa.me/70357100?text=Hello%20I%20want%20to%20place%20an%20order';">
+                      Order Now
+                    </button>
+                    
+                </div>
+
+                <div class="wrapper">
+                  <p class="category">Chicken</p>
+
+                  <div class="rating-wrapper">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+                </div>
+
+                <h3 class="h3 card-title">Chicken Burger</h3>
+                <div class="price-wrapper">
+                 <p class="price-text">Price:</p>
+                 <data class="price">300 000 LL</data>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="food-menu-card" data-category="burger">
+
+                <div class="card-banner">
+                
+                    <button class="btn food-menu-btn"  onclick="window.location.href='https://wa.me/70357100?text=Hello%20I%20want%20to%20place%20an%20order';">
+                      Order Now
+                    </button>
+                    
+                </div>
+
+                <div class="wrapper">
+                  <p class="category">Lebanese</p>
+
+                  <div class="rating-wrapper">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+                </div>
+
+                <h3 class="h3 card-title">Lebanese Burger</h3>
+                <div class="price-wrapper">
+                 <p class="price-text">Price:</p>
+                 <data class="price">350 000 LL</data>
+                </div>
+
+              </div>
+            </li>
+            <li>
+              <div class="food-menu-card" data-category="burger">
+
+                <div class="card-banner">
+                
+                    <button class="btn food-menu-btn" onclick="window.location.href='https://wa.me/70357100?text=Hello%20I%20want%20to%20place%20an%20order';">
+                      Order Now
+                    </button>
+                    
+                </div>
+
+                <div class="wrapper">
+                  <p class="category">Giant</p>
+
+                  <div class="rating-wrapper">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+                </div>
+
+                <h3 class="h3 card-title">Giant Burger</h3>
+                <div class="price-wrapper">
+                 <p class="price-text">Price:</p>
+                 <data class="price">550 000 LL</data>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="food-menu-card" data-category="burger">
+
+                <div class="card-banner">
+                 
+                    <button class="btn food-menu-btn"  onclick="window.location.href='https://wa.me/70357100?text=Hello%20I%20want%20to%20place%20an%20order';">
+                      Order Now
+                    </button>
+                    
+                </div>
+
+                <div class="wrapper">
+                  <p class="category">Texas</p>
+
+                  <div class="rating-wrapper">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+                </div>
+
+                <h3 class="h3 card-title">Texas Burger</h3>
+                <div class="price-wrapper">
+                 <p class="price-text">Price:</p>
+                 <data class="price">450 000 LL</data>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="food-menu-card" data-category="burger">
+
+                <div class="card-banner">
+                
+                    <button class="btn food-menu-btn" onclick="window.location.href='https://wa.me/70357100?text=Hello%20I%20want%20to%20place%20an%20order';">
+                      Order Now
+                    </button>
+                    
+                </div>
+
+                <div class="wrapper">
+                  <p class="category">Takis</p>
+
+                  <div class="rating-wrapper">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+                </div>
+
+                <h3 class="h3 card-title">Takis Burger</h3>
+                <div class="price-wrapper">
+                 <p class="price-text">Price:</p>
+                 <data class="price">400 000 LL</data>
+                </div>
+
+              </div>
+            </li>
+            <li>
+              <div class="food-menu-card" data-category="burger">
+
+                <div class="card-banner">
+                  
+                    <button class="btn food-menu-btn" onclick="window.location.href='https://wa.me/70357100?text=Hello%20I%20want%20to%20place%20an%20order';">
+                      Order Now
+                    </button>
+                    
+                </div>
+
+                <div class="wrapper">
+                  <p class="category">Honey Mustard</p>
+
+                  <div class="rating-wrapper">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+                </div>
+
+                <h3 class="h3 card-title">Honey Mustard Burger</h3>
+                <div class="price-wrapper">
+                 <p class="price-text">Price:</p>
+                 <data class="price">400 000 LL</data>
+                </div>
+
+              </div>
+            </li>
+            <li>
+              <div class="food-menu-card" data-category="burger">
+
+                <div class="card-banner">
+                 
+                    <button class="btn food-menu-btn" onclick="window.location.href='https://wa.me/70357100?text=Hello%20I%20want%20to%20place%20an%20order';" >
+                      Order Now
+                    </button>
+                    
+                </div>
+
+                <div class="wrapper">
+                  <p class="category">Makhbousa</p>
+
+                  <div class="rating-wrapper">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+                </div>
+
+                <h3 class="h3 card-title">Makhbousa Burger</h3>
+                <div class="price-wrapper">
+                 <p class="price-text">Price:</p>
+                 <data class="price">700 000 LL</data>
+                </div>
+
+              </div>
+            </li>
+            <li>
+              <div class="food-menu-card" data-category="burger">
+
+                <div class="card-banner">
+                 
+                    <button class="btn food-menu-btn" onclick="window.location.href='https://wa.me/70357100?text=Hello%20I%20want%20to%20place%20an%20order';">
+                      Order Now
+                    </button>
+                    
+                </div>
+
+                <div class="wrapper">
+                  <p class="category">Mushroom</p>
+
+                  <div class="rating-wrapper">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+                </div>
+
+                <h3 class="h3 card-title">Mushroom Burger</h3>
+                <div class="price-wrapper">
+                 <p class="price-text">Price:</p>
+                 <data class="price">500 000 LL</data>
+                </div>
+
+              </div>
+            </li>
+            <li>
+              <div class="food-menu-card" data-category="sandwich">
+
+                <div class="card-banner">
+                  
+                    <button class="btn food-menu-btn" onclick="window.location.href='https://wa.me/70357100?text=Hello%20I%20want%20to%20place%20an%20order';">
+                      Order Now
+                    </button>
+                    
+                </div>
+
+                <div class="wrapper">
+                  <p class="category">Crispy</p>
+
+                  <div class="rating-wrapper">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+                </div>
+
+                <h3 class="h3 card-title">Crispy Sandwich</h3>
+                <div class="price-wrapper">
+                 <p class="price-text">Price:</p>
+                 <data class="price">400 000 LL</data>
+                </div>
+
+              </div>
+            </li>
+            <li>
+              <div class="food-menu-card" data-category="sandwich">
+
+                <div class="card-banner">
+                
+                  <button class="btn food-menu-btn" onclick="window.location.href='https://wa.me/70357100?text=Hello%20I%20want%20to%20place%20an%20order';">
+                    Order Now
+                  </button>
+                    
+                </div>
+
+                <div class="wrapper">
+                  <p class="category">Boneless</p>
+
+                  <div class="rating-wrapper">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+                </div>
+
+                <h3 class="h3 card-title">Boneless Wrap</h3>
+                <div class="price-wrapper">
+                 <p class="price-text">Price:</p>
+                 <data class="price">450 000 LL</data>
+                </div>
+
+              </div>
+            </li>
+            <li>
+              <div class="food-menu-card" data-category="sandwich">
+
+                <div class="card-banner">
+                
+                    <button class="btn food-menu-btn" onclick="window.location.href='https://wa.me/70357100?text=Hello%20I%20want%20to%20place%20an%20order';">
+                      Order Now
+                    </button>
+                    
+                </div>
+
+                <div class="wrapper">
+                  <p class="category">Hot Dog</p>
+
+                  <div class="rating-wrapper">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+                </div>
+
+                <h3 class="h3 card-title">Hot Dog</h3>
+                <div class="price-wrapper">
+                 <p class="price-text">Price:</p>
+                 <data class="price">300 000 LL</data>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="food-menu-card" data-category="plates">
+
+                <div class="card-banner">
+                
+                    <button class="btn food-menu-btn" onclick="window.location.href='https://wa.me/70357100?text=Hello%20I%20want%20to%20place%20an%20order';">
+                      Order Now
+                    </button>
+                    
+                </div>
+
+                <div class="wrapper">
+                  <p class="category">Fries</p>
+
+                  <div class="rating-wrapper">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+                </div>
+
+                <h3 class="h3 card-title">Fries Box</h3>
+                <div class="price-wrapper">
+                 <p class="price-text">Price:</p>
+                 <data class="price">150 000 LL</data>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="food-menu-card" data-category="plates">
+
+                <div class="card-banner">
+                
+                    <button class="btn food-menu-btn" onclick="window.location.href='https://wa.me/70357100?text=Hello%20I%20want%20to%20place%20an%20order';">
+                      Order Now
+                    </button>
+                    
+                </div>
+
+                <div class="wrapper">
+                  <p class="category">Fries</p>
+
+                  <div class="rating-wrapper">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+                </div>
+
+                <h3 class="h3 card-title">Fries Plate</h3>
+                <div class="price-wrapper">
+                 <p class="price-text">Price:</p>
+                 <data class="price">200 000 LL</data>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="food-menu-card" data-category="plates">
+
+                <div class="card-banner">
+                
+                    <button class="btn food-menu-btn" onclick="window.location.href='https://wa.me/70357100?text=Hello%20I%20want%20to%20place%20an%20order';">
+                      Order Now
+                    </button>
+                    
+                </div>
+
+                <div class="wrapper">
+                  <p class="category">Nuggets</p>
+
+                  <div class="rating-wrapper">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+                </div>
+
+                <h3 class="h3 card-title">Nuggets & Fries</h3>
+                <div class="price-wrapper">
+                 <p class="price-text">Price:</p>
+                 <data class="price">300 000 LL</data>
+                </div>
+
+              </div>
+            </li>
+            <li>
+              <div class="food-menu-card" data-category="plates">
+
+                <div class="card-banner">
+                 
+                    <button class="btn food-menu-btn" onclick="window.location.href='https://wa.me/70357100?text=Hello%20I%20want%20to%20place%20an%20order';" >
+                      Order Now
+                    </button>
+                    
+                </div>
+
+                <div class="wrapper">
+                  <p class="category">Crispy</p>
+
+                  <div class="rating-wrapper">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+                </div>
+
+                <h3 class="h3 card-title">Crispy & Fries</h3>
+                <div class="price-wrapper">
+                 <p class="price-text">Price:</p>
+                 <data class="price">450 000 LL</data>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="food-menu-card" data-category="plates">
+
+                <div class="card-banner">
+                  
+                    <button class="btn food-menu-btn" onclick="window.location.href='https://wa.me/70357100?text=Hello%20I%20want%20to%20place%20an%20order';">
+                      Order Now
+                    </button>
+                    
+                </div>
+
+                <div class="wrapper">
+                  <p class="category">Signature</p>
+
+                  <div class="rating-wrapper">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+                </div>
+
+                <h3 class="h3 card-title">Signature</h3>
+                <div class="price-wrapper">
+                 <p class="price-text">Price:</p>
+                 <data class="price">500 000 LL</data>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="food-menu-card" data-category="plates">
+
+                <div class="card-banner">
+                  
+                    <button class="btn food-menu-btn" onclick="window.location.href='https://wa.me/70357100?text=Hello%20I%20want%20to%20place%20an%20order';">
+                      Order Now
+                    </button>
+                    
+                </div>
+
+                <div class="wrapper">
+                  <p class="category">Ceaser</p>
+
+                  <div class="rating-wrapper">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+                </div>
+
+                <h3 class="h3 card-title">Ceaser Salad</h3>
+                <div class="price-wrapper">
+                 <p class="price-text">Price:</p>
+                 <data class="price">500 000 LL</data>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="food-menu-card" data-category="desert">
+
+                <div class="card-banner">
+                 
+                    <button class="btn food-menu-btn" onclick="window.location.href='https://wa.me/70357100?text=Hello%20I%20want%20to%20place%20an%20order';">
+                      Order Now
+                    </button>
+                    
+                </div>
+
+                <div class="wrapper">
+                  <p class="category">Crepe</p>
+
+                  <div class="rating-wrapper">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+                </div>
+
+                <h3 class="h3 card-title">Crepe Nutella</h3>
+                <div class="price-wrapper">
+                 <p class="price-text">Price:</p>
+                 <data class="price">250 000 LL</data>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="food-menu-card" data-category="desert">
+
+                <div class="card-banner">
+                  
+                    <button class="btn food-menu-btn" onclick="window.location.href='https://wa.me/70357100?text=Hello%20I%20want%20to%20place%20an%20order';">
+                      Order Now
+                    </button>
+                    
+                </div>
+
+                <div class="wrapper">
+                  <p class="category">Crepe</p>
+
+                  <div class="rating-wrapper">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+                </div>
+
+                <h3 class="h3 card-title">Crepe Lotus</h3>
+                <div class="price-wrapper">
+                 <p class="price-text">Price:</p>
+                 <data class="price">300 000 LL</data>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="food-menu-card" data-category="desert">
+
+                <div class="card-banner">
+                  
+                    <button class="btn food-menu-btn" onclick="window.location.href='https://wa.me/70357100?text=Hello%20I%20want%20to%20place%20an%20order';">
+                      Order Now
+                    </button>
+                    
+                </div>
+
+                <div class="wrapper">
+                  <p class="category">Crepe</p>
+
+                  <div class="rating-wrapper">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+                </div>
+
+                <h3 class="h3 card-title">Crepe Kinder</h3>
+                <div class="price-wrapper">
+                 <p class="price-text">Price:</p>
+                 <data class="price">350 000 LL</data>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="food-menu-card" data-category="desert">
+
+                <div class="card-banner">
+                  
+                    <button class="btn food-menu-btn" onclick="window.location.href='https://wa.me/70357100?text=Hello%20I%20want%20to%20place%20an%20order';" >
+                      Order Now
+                    </button>
+                    
+                </div>
+
+                <div class="wrapper">
+                  <p class="category">Crepe</p>
+
+                  <div class="rating-wrapper">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+                </div>
+
+                <h3 class="h3 card-title">Crepe Oreo</h3>
+                <div class="price-wrapper">
+                 <p class="price-text">Price:</p>
+                 <data class="price">350 000 LL</data>
+                </div>
+
+              </div>
+            </li>
+            <li>
+              <div class="food-menu-card" data-category="desert"> 
+
+                <div class="card-banner">
+                  
+                    <button class="btn food-menu-btn" onclick="window.location.href='https://wa.me/70357100?text=Hello%20I%20want%20to%20place%20an%20order';">
+                      Order Now
+                    </button>
+                    
+                </div>
+
+                <div class="wrapper">
+                  <p class="category">Crepe</p>
+
+                  <div class="rating-wrapper">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+                </div>
+
+                <h3 class="h3 card-title">Marshmallow Crepe</h3>
+                <div class="price-wrapper">
+                 <p class="price-text">Price:</p>
+                 <data class="price">350 000 LL</data>
+                </div>
+
+              </div>
+            </li>
+           
+
+            <li>
+              <div class="food-menu-card" data-category="desert">
+
+                <div class="card-banner">
+                  
+                    <button class="btn food-menu-btn" onclick="window.location.href='https://wa.me/70357100?text=Hello%20I%20want%20to%20place%20an%20order';">
+                      Order Now
+                    </button>
+                    
+                </div>
+
+                <div class="wrapper">
+                  <p class="category">Tiramisu</p>
+
+                  <div class="rating-wrapper">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+                </div>
+
+                <h3 class="h3 card-title">Tiramissu</h3>
+                <div class="price-wrapper">
+                 <p class="price-text">Price:</p>
+                 <data class="price">300 000 LL</data>
+                </div>
+
+              </div>
+            </li>
+
+
+          </ul>
+
+
+        </div>
+      </section>
+
+
+
+      <!-- 
+        - #CTA
+      -->
+
+<section class="section section-divider white cta" style="background-image: url('hero-bg.jpg')">
+        <div class="container">
+
+          <div class="cta-content">
+
+            <h2 class="h2 section-title">
+              Discover the Flavor at Ras Vegas: 
+              <span class="span">Quality Burgers!</span>
+            </h2>
+
+            <p class="section-text">
+              At Ras Vegas, we’re bringing a fresh approach to the family-run restaurant tradition. Inspired by the spirit of communities coming together, we offer a unique blend of flavors and a welcoming atmosphere that invites everyone to enjoy something special.
+            </p>
+           </div>
+
+          <figure class="cta-banner">
+            <img src="cta-banner.png" width="700" height="637" loading="lazy" alt="Burger"
+              class="w-100 cta-img">
+        </figure>
+      </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #DELIVERY
+      -->
+
+
+<section class="section section-divider gray delivery">
+        <div class="container">
+
+          <div class="delivery-content">
+
+            <h2 class="h2 section-title">
+              Fresh Flavors Delivered to Your Doorstep,<span class="span">Right on Time!</span>
+            </h2>
+
+           
+
+
+          <figure class="delivery-banner">
+            <img src="delivery-banner-bg.png" width="700" height="602" loading="lazy" alt="clouds"
+              class="w-100">
+
+            <img src="delivery-boy.svg" width="1000" height="880" loading="lazy" alt="delivery boy"
+              class="w-100 delivery-img" data-delivery-boy>
+          </figure>
+
+        </div>
+      </section>
+
+
+
+
+
+     
+     
+
+</article>
+  </main>
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+<footer class="footer" id="footer">
+
+    <div class="footer-top" style="background-image: url('footer-illustration.png')">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="" class="logo">Ras <span class="span">Vegas</span></a>
+
+          <p class="footer-text">
+            Serving you with delicious flavors and unforgettable experiences, one dish at a time.
+          </p>
+
+          <ul class="social-list">
+
+            
+
+
+            <li>
+              <a href="https://www.instagram.com/ras.vegas1?igsh=Nmo2N3R3djhibmhu" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+
+          </ul>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Contact Info</p>
+          </li>
+
+          <li>
+            <p class="footer-list-item">70 357 100</p>
+          </li>
+
+          <li>
+            <p class="footer-list-item">chantalmrad4@gmail.com</p>
+          </li>
+
+          <li>
+            <address class="footer-list-item">Ras Baalbeck ,Lebanon</address>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Opening Hours</p>
+          </li>
+
+          <li>
+            <p class="footer-list-item">Monday-Saturday: 06:00-12:00</p>
+          </li>
+
+
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p class="copyright-text">
+          &copy; 2025 <a href="#" class="copyright-link">Ras Vegas</a> All Rights Reserved.
+        </p>
+      </div>
+    </div>
+
+  </footer>
+
+  
+  
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+<a href="#top" class="back-top-btn" aria-label="Back to top" data-back-top-btn>
+    <ion-icon name="chevron-up"></ion-icon>
+  </a>
+
+
+    <!-- 
+    - ionicon link
+  -->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="script.js"></script>
+</body>
+
+</html>
