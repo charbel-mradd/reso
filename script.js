@@ -78,6 +78,48 @@ const filterButtons = document.querySelectorAll('.filter-btn');
 const foodMenuCards = document.querySelectorAll('.food-menu-card');
 const foodMenuList = document.querySelector('.food-menu-list');
 
+
+/////////////////////
+
+
+function toggleOrderButtonVisibility() {
+  const isMobile = window.innerWidth <= 768; // Adjust breakpoint as needed
+  if (!isMobile) return;
+
+  foodMenuCards.forEach(card => {
+    const rect = card.getBoundingClientRect();
+    const orderButton = card.querySelector('.food-menu-btn');
+
+    if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
+      orderButton.style.opacity = '1';
+      orderButton.style.transform = 'translate(-50%, -50%)';
+    } else {
+      orderButton.style.opacity = '0';
+      orderButton.style.transform = 'translate(-50%, 0)';
+    }
+  });
+}
+
+window.addEventListener('scroll', toggleOrderButtonVisibility);
+window.addEventListener('resize', toggleOrderButtonVisibility);
+document.addEventListener('DOMContentLoaded', toggleOrderButtonVisibility);
+
+
+
+
+///////////////////////
+
+
+
+
+
+
+
+
+
+
+
+
 filterButtons.forEach(button => {
   button.addEventListener('click', () => {
     const filter = button.getAttribute('data-filter');

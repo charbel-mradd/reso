@@ -606,7 +606,7 @@ body.active { overflow: hidden; }
   --height: 40px;
   --padding-inline: 20px;
   opacity: 0;
-  transition: var(--transition-2);
+  transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 .food-menu-btn:is(:hover, :focus) { --bg-color: var(--deep-saffron); }
